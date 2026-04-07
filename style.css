@@ -1,1 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
 
+body {
+  background: #0f172a;
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #020617;
+}
+
+nav h1 {
+  color: #3b82f6;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #3b82f6;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #3b82f6;
+  margin-bottom: 20px;
+}
+
+/* SKILLS */
+ul {
+  list-style: none;
+}
+
+li {
+  background: #1e293b;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* HEADER SPACING FIX */
+header {
+  margin-bottom: 40px;
+}
