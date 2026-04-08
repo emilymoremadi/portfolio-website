@@ -1,19 +1,9 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffdee9, #b5fffc);
   color: #333;
   scroll-behavior: smooth;
-}
-
-/* BACKGROUND IMAGE */
-body::before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: url('profile.jpg') no-repeat center/cover;
-  opacity: 0.2;
-  z-index: -1;
 }
 
 /* HEADER */
@@ -29,7 +19,7 @@ header h1 {
   font-size: 40px;
 }
 
-/* NAV */
+/* NAVIGATION */
 nav {
   display: flex;
   justify-content: center;
@@ -68,7 +58,7 @@ h2 {
   color: #ff6ec4;
 }
 
-/* CONTACT LINK */
+/* CONTACT */
 #contact a {
   color: #7873f5;
   font-size: 18px;
