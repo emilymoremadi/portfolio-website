@@ -1,69 +1,88 @@
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
 }
 
-body {
-  background: #0f172a;
+/* BACKGROUND IMAGE */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('profile.jpg') no-repeat center/cover;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
   color: white;
 }
 
-/* NAVBAR */
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+/* NAV */
 nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background: #020617;
-}
-
-nav h1 {
-  color: #3b82f6;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+  justify-content: center;
+  background: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
 }
 
 nav a {
-  color: white;
+  margin: 0 15px;
   text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
   transition: 0.3s;
 }
 
 nav a:hover {
-  color: #3b82f6;
+  background: #ff6ec4;
+  color: white;
 }
 
 /* SECTIONS */
 section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 h2 {
-  color: #3b82f6;
-  margin-bottom: 20px;
+  color: #ff6ec4;
 }
 
-/* SKILLS */
-ul {
-  list-style: none;
+/* CONTACT LINK */
+#contact a {
+  color: #7873f5;
+  font-size: 18px;
+  text-decoration: none;
 }
 
-li {
-  background: #1e293b;
-  margin: 10px 0;
-  padding: 12px;
-  border-radius: 8px;
+#contact a:hover {
+  text-decoration: underline;
 }
 
-/* HEADER SPACING FIX */
-header {
-  margin-bottom: 40px;
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
 }
